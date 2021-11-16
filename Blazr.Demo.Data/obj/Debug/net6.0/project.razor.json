@@ -1,0 +1,15 @@
+{
+  "FilePath": "c:\\Users\\shaun\\source\\repos\\Blazr.Demo.Template\\Blazr.Demo.Data\\Blazr.Demo.Data.csproj",
+  "Configuration": {
+    "ConfigurationName": "Default",
+    "LanguageVersion": "6.0",
+    "Extensions": []
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 1000
+  },
+  "RootNamespace": "Blazr.Demo.Data",
+  "Documents": [],
+  "SerializationFormat": "0.2"
+}

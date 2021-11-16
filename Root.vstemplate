@@ -1,0 +1,45 @@
+<VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>Blazr Demo Solution Template</Name>
+    <Description>Blazr Demo Blazor SPA Solution Template</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Blazr.Demo</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon></Icon>
+  </TemplateData>
+  <TemplateContent>
+	<ProjectCollection>
+            <ProjectTemplateLink ProjectName="$projectname$.Config" CopyParameters="true">
+                Blazr.Demo.Config\Blazr.Demo.Config.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="$projectname$.Core" CopyParameters="true">
+                Blazr.Demo.Core\Blazr.Demo.Core.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="$projectname$.Data" CopyParameters="true">
+                Blazr.Demo.Data\Blazr.Demo.Data.vstemplate
+            </ProjectTemplateLink>
+	          <ProjectTemplateLink ProjectName="$projectname$.UI" CopyParameters="true">
+                Blazr.Demo.UI\Blazr.Demo.UI.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="$projectname$.Server.Web" CopyParameters="true">
+                Blazr.Demo.Server.Web\Blazr.Demo.Server.Web.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="$projectname$.WASM" CopyParameters="true">
+                Blazr.Demo.WASM\Blazr.Demo.WASM.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="$projectname$.WASM.Web" CopyParameters="true">
+                Blazr.Demo.WASM.Web\Blazr.Demo.WASM.Web.vstemplate
+            </ProjectTemplateLink>
+        </ProjectCollection>
+    </TemplateContent>
+<CustomParameters>
+    <CustomParameter Name="$color1$" Value="Red"/>
+    <CustomParameter Name="$color2$" Value="Blue "/>
+</CustomParameters>
+</VSTemplate>

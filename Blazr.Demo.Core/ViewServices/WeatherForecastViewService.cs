@@ -1,0 +1,43 @@
+﻿/// ============================================================
+/// Author: Shaun Curtis, Cold Elm Coders
+/// License: Use And Donate
+/// If you use it, donate something to a charity somewhere
+/// ============================================================
+
+namespace $safeprojectname$
+{
+    public class WeatherForecastViewService
+    {
+        private readonly IWeatherForecastDataBroker? weatherForecastDataBroker;
+
+        public List<WeatherForecast>? Records { get; private set; }
+
+        public WeatherForecastViewService(IWeatherForecastDataBroker weatherForecastDataBroker)
+            => this.weatherForecastDataBroker = weatherForecastDataBroker!;
+
+        public async Task GetForecastsAsync()
+        {
+            this.Records = null;
+            this.NotifyListChanged(this.Records, EventArgs.Empty);
+            this.Records = await weatherForecastDataBroker!.GetWeatherForecastsAsync();
+            this.NotifyListChanged(this.Records, EventArgs.Empty);
+        }
+
+        public async Task AddRecord(WeatherForecast record)
+        {
+            await weatherForecastDataBroker!.AddForecastAsync(record);
+            await GetForecastsAsync();
+        }
+
+        public async Task DeleteRecord(Guid Id)
+        {
+            _ = await weatherForecastDataBroker!.DeleteForecastAsync(Id);
+            await GetForecastsAsync();
+        }
+
+        public event EventHandler<EventArgs>? ListChanged;
+
+        public void NotifyListChanged(object? sender, EventArgs e)
+            => ListChanged?.Invoke(sender, e);
+    }
+}

@@ -1,0 +1,43 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Blazr.Demo.UI</Name>
+    <Description>Blazr.Demo.UI Template</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Blazr.Demo.UI</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Blazr.Demo.UI.csproj" File="Blazr.Demo.UI.csproj" ReplaceParameters="true">
+      <Folder Name="Apps" TargetFolderName="Apps">
+        <ProjectItem ReplaceParameters="true" TargetFileName="App.razor">App.razor</ProjectItem>
+      </Folder>
+      <Folder Name="Components" TargetFolderName="Components">
+        <Folder Name="WeatherForecasts" TargetFolderName="WeatherForecasts">
+          <ProjectItem ReplaceParameters="true" TargetFileName="WeatherForecastList.razor">WeatherForecastList.razor</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="WeatherForecastListHeader.razor">WeatherForecastListHeader.razor</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Pages" TargetFolderName="Pages">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Counter.razor">Counter.razor</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="FetchData.razor">FetchData.razor</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Index.razor">Index.razor</ProjectItem>
+      </Folder>
+      <Folder Name="Shared" TargetFolderName="Shared">
+        <ProjectItem ReplaceParameters="true" TargetFileName="MainLayout.razor">MainLayout.razor</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MainLayout.razor.css">MainLayout.razor.css</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="NavMenu.razor">NavMenu.razor</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="NavMenu.razor.css">NavMenu.razor.css</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SurveyPrompt.razor">SurveyPrompt.razor</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="_Imports.razor">_Imports.razor</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

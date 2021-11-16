@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="6.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\$ext_projectname$.Config\$ext_projectname$.Config.csproj" />
+		<ProjectReference Include="..\$ext_projectname$.UI\$ext_projectname$.UI.csproj" />
+		<ProjectReference Include="..\$ext_projectname$.WASM\$ext_projectname$.WASM.csproj" />
+	</ItemGroup>
+
+</Project>

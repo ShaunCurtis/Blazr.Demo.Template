@@ -1,0 +1,8 @@
+﻿@page "/"
+@namespace $safeprojectname$.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = "_Layout";
+}
+
+<component type="typeof($ext_safeprojectname$.UI.App)" render-mode="ServerPrerendered" />

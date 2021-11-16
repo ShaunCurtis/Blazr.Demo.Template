@@ -1,0 +1,28 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Blazr.Demo.Data</Name>
+    <Description>Blazr.Demo.Data Template</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Blazr.Demo.Data</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Blazr.Demo.Data.csproj" File="Blazr.Demo.Data.csproj" ReplaceParameters="true">
+      <Folder Name="DataBrokers" TargetFolderName="DataBrokers">
+        <ProjectItem ReplaceParameters="true" TargetFileName="WeatherForecastAPIDataBroker.cs">WeatherForecastAPIDataBroker.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="WeatherForecastServerDataBroker.cs">WeatherForecastServerDataBroker.cs</ProjectItem>
+      </Folder>
+      <Folder Name="DataStores" TargetFolderName="DataStores">
+        <ProjectItem ReplaceParameters="true" TargetFileName="WeatherForecastDataStore.cs">WeatherForecastDataStore.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

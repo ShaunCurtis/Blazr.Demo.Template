@@ -1,0 +1,30 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Blazr.Demo.Core</Name>
+    <Description>Blazr Demo Core Library</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Blazr.Demo.Core</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Blazr.Demo.Core.csproj" File="Blazr.Demo.Core.csproj" ReplaceParameters="true">
+      <Folder Name="DataClasses" TargetFolderName="DataClasses">
+        <ProjectItem ReplaceParameters="true" TargetFileName="WeatherForecast.cs">WeatherForecast.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Interfaces" TargetFolderName="Interfaces">
+        <ProjectItem ReplaceParameters="true" TargetFileName="IWeatherForecastDataBroker.cs">IWeatherForecastDataBroker.cs</ProjectItem>
+      </Folder>
+      <Folder Name="ViewServices" TargetFolderName="ViewServices">
+        <ProjectItem ReplaceParameters="true" TargetFileName="WeatherForecastViewService.cs">WeatherForecastViewService.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
