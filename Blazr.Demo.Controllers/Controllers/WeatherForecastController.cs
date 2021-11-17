@@ -1,4 +1,10 @@
-﻿using $ext_safeprojectname$.Core;
+﻿/// ============================================================
+/// Author: Shaun Curtis, Cold Elm Coders
+/// License: Use And Donate
+/// If you use it, donate something to a charity somewhere
+/// ============================================================
+
+using $ext_projectname$.Core;
 using Microsoft.AspNetCore.Mvc;
 
 namespace $safeprojectname$
@@ -26,6 +32,5 @@ namespace $safeprojectname$
         [HttpPost]
         public async Task<bool> DeleteRecordAsync([FromBody] Guid Id)
             => await weatherForecastDataBroker.DeleteForecastAsync(Id);
-
     }
 }

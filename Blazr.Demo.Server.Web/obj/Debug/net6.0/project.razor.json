@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\shaun\\source\\repos\\Blazr.Demo.Template\\Blazr.Demo.Server.Web\\Blazr.Demo.Server.Web.csproj",
+  "FilePath": "c:\\Users\\shaun\\Documents\\GitHub\\Blazr.Demo.Template\\Blazr.Demo.Server.Web\\Blazr.Demo.Server.Web.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -16298,23 +16298,23 @@
   "RootNamespace": "Blazr.Demo.Server.Web",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\shaun\\source\\repos\\Blazr.Demo.Template\\Blazr.Demo.Server.Web\\Pages\\_Layout.cshtml",
-      "TargetPath": "Pages\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\shaun\\Documents\\GitHub\\Blazr.Demo.Template\\Blazr.Demo.Server.Web\\Pages\\Error.cshtml",
+      "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\shaun\\source\\repos\\Blazr.Demo.Template\\Blazr.Demo.Server.Web\\Pages\\_Host.cshtml",
+      "FilePath": "c:\\Users\\shaun\\Documents\\GitHub\\Blazr.Demo.Template\\Blazr.Demo.Server.Web\\Pages\\_Host.cshtml",
       "TargetPath": "Pages\\_Host.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\shaun\\source\\repos\\Blazr.Demo.Template\\Blazr.Demo.Server.Web\\_Imports.razor",
+      "FilePath": "c:\\Users\\shaun\\Documents\\GitHub\\Blazr.Demo.Template\\Blazr.Demo.Server.Web\\_Imports.razor",
       "TargetPath": "_Imports.razor",
       "FileKind": "componentImport"
     },
     {
-      "FilePath": "c:\\Users\\shaun\\source\\repos\\Blazr.Demo.Template\\Blazr.Demo.Server.Web\\Pages\\Error.cshtml",
-      "TargetPath": "Pages\\Error.cshtml",
+      "FilePath": "c:\\Users\\shaun\\Documents\\GitHub\\Blazr.Demo.Template\\Blazr.Demo.Server.Web\\Pages\\_Layout.cshtml",
+      "TargetPath": "Pages\\_Layout.cshtml",
       "FileKind": "mvc"
     }
   ],

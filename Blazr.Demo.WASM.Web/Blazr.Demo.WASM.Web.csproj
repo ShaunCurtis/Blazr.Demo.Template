@@ -11,6 +11,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<ProjectReference Include="..\$ext_projectname$.Controllers\$ext_projectname$.Controllers.csproj" />
 		<ProjectReference Include="..\$ext_projectname$.Config\$ext_projectname$.Config.csproj" />
 		<ProjectReference Include="..\$ext_projectname$.UI\$ext_projectname$.UI.csproj" />
 		<ProjectReference Include="..\$ext_projectname$.WASM\$ext_projectname$.WASM.csproj" />

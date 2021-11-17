@@ -20,21 +20,21 @@ namespace $safeprojectname$
         public WeatherForecastAPIDataBroker(HttpClient httpClient)
             => this.httpClient = httpClient!;
 
-        public async Task<bool> AddForecastAsync(WeatherForecast record)
+        public async ValueTask<bool> AddForecastAsync(WeatherForecast record)
         {
             var response = await this.httpClient!.PostAsJsonAsync<WeatherForecast>($"/api/weatherforecast/add", record);
             var result = await response.Content.ReadFromJsonAsync<bool>();
             return result;
         }
 
-        public async Task<bool> DeleteForecastAsync(Guid Id)
+        public async ValueTask<bool> DeleteForecastAsync(Guid Id)
         {
             var response = await this.httpClient!.PostAsJsonAsync<Guid>($"/api/weatherforecast/delete", Id);
             var result = await response.Content.ReadFromJsonAsync<bool>();
             return result;
         }
 
-        public async Task<List<WeatherForecast>> GetWeatherForecastsAsync()
+        public async ValueTask<List<WeatherForecast>> GetWeatherForecastsAsync()
         {
            var list = await this.httpClient!.GetFromJsonAsync<List<WeatherForecast>>($"/api/weatherforecast/list");
             return list!;

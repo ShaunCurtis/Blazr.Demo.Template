@@ -14,19 +14,18 @@ namespace $safeprojectname$
     /// </summary>
     public class WeatherForecastServerDataBroker : IWeatherForecastDataBroker
     {
-        private readonly WeatherForecastDataStore weatherForecastDataService;
+        private readonly WeatherForecastDataStore weatherForecastDataStore;
 
-        public WeatherForecastServerDataBroker(WeatherForecastDataStore weatherForecastDataService)
-            => this.weatherForecastDataService = weatherForecastDataService;
+        public WeatherForecastServerDataBroker(WeatherForecastDataStore weatherForecastDataStore)
+            => this.weatherForecastDataStore = weatherForecastDataStore;
 
-        public async Task<bool> AddForecastAsync(WeatherForecast record)
-            => await this.weatherForecastDataService!.AddForecastAsync(record);
+        public async ValueTask<bool> AddForecastAsync(WeatherForecast record)
+            => await this.weatherForecastDataStore!.AddForecastAsync(record);
 
-        public async Task<bool> DeleteForecastAsync(Guid Id)
-            => await this.weatherForecastDataService!.DeleteForecastAsync(Id);
+        public async ValueTask<bool> DeleteForecastAsync(Guid Id)
+            => await this.weatherForecastDataStore!.DeleteForecastAsync(Id);
 
-        public async Task<List<WeatherForecast>> GetWeatherForecastsAsync()
-            => await this.weatherForecastDataService!.GetWeatherForecastsAsync();
-
+        public async ValueTask<List<WeatherForecast>> GetWeatherForecastsAsync()
+            => await this.weatherForecastDataStore!.GetWeatherForecastsAsync();
     }
 }

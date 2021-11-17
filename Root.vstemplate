@@ -18,6 +18,9 @@
             <ProjectTemplateLink ProjectName="$projectname$.Config" CopyParameters="true">
                 Blazr.Demo.Config\Blazr.Demo.Config.vstemplate
             </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="$projectname$.Controllers" CopyParameters="true">
+                Blazr.Demo.Controllers\Blazr.Demo.Controllers.vstemplate
+            </ProjectTemplateLink>
             <ProjectTemplateLink ProjectName="$projectname$.Core" CopyParameters="true">
                 Blazr.Demo.Core\Blazr.Demo.Core.vstemplate
             </ProjectTemplateLink>
@@ -36,10 +39,9 @@
             <ProjectTemplateLink ProjectName="$projectname$.WASM.Web" CopyParameters="true">
                 Blazr.Demo.WASM.Web\Blazr.Demo.WASM.Web.vstemplate
             </ProjectTemplateLink>
+	          <ProjectTemplateLink ProjectName="$projectname$.Tests" CopyParameters="true">
+                Blazr.Demo.Tests\Blazr.Demo.Tests.vstemplate
+            </ProjectTemplateLink>
         </ProjectCollection>
     </TemplateContent>
-<CustomParameters>
-    <CustomParameter Name="$color1$" Value="Red"/>
-    <CustomParameter Name="$color2$" Value="Blue "/>
-</CustomParameters>
 </VSTemplate>

@@ -11,11 +11,10 @@ namespace $safeprojectname$
     /// </summary>
     public interface IWeatherForecastDataBroker
     {
-        public Task<bool> AddForecastAsync(WeatherForecast record);
+        public ValueTask<bool> AddForecastAsync(WeatherForecast record);
 
-        public Task<bool> DeleteForecastAsync(Guid Id);
+        public ValueTask<bool> DeleteForecastAsync(Guid Id);
 
-        public Task<List<WeatherForecast>> GetWeatherForecastsAsync();
-
+        public ValueTask<List<WeatherForecast>> GetWeatherForecastsAsync();
     }
 }

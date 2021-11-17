@@ -1,0 +1,31 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Blazr.Demo.Tests</Name>
+    <Description>Blazr.Demo.Tests</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Blazr.Demo.Tests</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Blazr.Demo.Tests.csproj" File="Blazr.Demo.Tests.csproj" ReplaceParameters="true">
+      <Folder Name="Components" TargetFolderName="Components">
+        <ProjectItem ReplaceParameters="true" TargetFileName="CounterTests.cs">CounterTests.cs</ProjectItem>
+      </Folder>
+      <Folder Name="DataBrokers" TargetFolderName="DataBrokers">
+        <ProjectItem ReplaceParameters="true" TargetFileName="WeatherForecastDataBrokerTests.cs">WeatherForecastDataBrokerTests.cs</ProjectItem>
+      </Folder>
+      <Folder Name="ViewServices" TargetFolderName="ViewServices">
+        <ProjectItem ReplaceParameters="true" TargetFileName="WeatherForecastViewServiceTests.base.cs">WeatherForecastViewServiceTests.base.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="WeatherForecastViewServiceTests.cs">WeatherForecastViewServiceTests.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

@@ -16,16 +16,16 @@ namespace $safeprojectname$
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
-        private List<WeatherForecast> _records;
+        private List<DboWeatherForecast> _records;
 
         public WeatherForecastDataStore()
             =>
             _records = GetForecasts();
 
-        private List<WeatherForecast> GetForecasts()
+        private List<DboWeatherForecast> GetForecasts()
         {
             var rng = new Random();
-            return Enumerable.Range(1, _recordsToGet).Select(index => new WeatherForecast
+            return Enumerable.Range(1, _recordsToGet).Select(index => new DboWeatherForecast
             {
                 Id = Guid.NewGuid(),
                 Date = DateTime.Now.AddDays(index),
@@ -34,13 +34,14 @@ namespace $safeprojectname$
             }).ToList();
         }
 
-        public Task<bool> AddForecastAsync(WeatherForecast record)
+        public ValueTask<bool> AddForecastAsync(WeatherForecast weatherForecast)
         {
+            var record = DboWeatherForecast.FromDto(weatherForecast); 
             _records.Add(record);
-            return Task.FromResult(true);
+            return ValueTask.FromResult(true);
         }
 
-        public Task<bool> DeleteForecastAsync(Guid Id)
+        public ValueTask<bool> DeleteForecastAsync(Guid Id)
         {
             var deleted = false;
             var record = _records.FirstOrDefault(item => item.Id == Id);
@@ -49,15 +50,33 @@ namespace $safeprojectname$
                 _records.Remove(record);
                 deleted = true;
             }
-            return Task.FromResult(deleted);
+            return ValueTask.FromResult(deleted);
         }
 
-        public Task<List<WeatherForecast>> GetWeatherForecastsAsync()
+        public ValueTask<List<WeatherForecast>> GetWeatherForecastsAsync()
         {
             var list = new List<WeatherForecast>();
             _records
-                .ForEach(item => list.Add(item with { }));
-            return Task.FromResult(list);
+                .ForEach(item => list.Add(item.ToDto()));
+            return ValueTask.FromResult(list);
+        }
+
+        public void OverrideWeatherForecastDateSet(List<WeatherForecast> list)
+        {
+            _records.Clear();
+            list.ForEach(item => _records.Add(DboWeatherForecast.FromDto(item)));
+        }
+
+        public static List<WeatherForecast> CreateTestForecasts(int count)
+        {
+            var rng = new Random();
+            return Enumerable.Range(1, count).Select(index => new WeatherForecast
+            {
+                Id = Guid.NewGuid(),
+                Date = DateTime.Now.AddDays(index),
+                TemperatureC = rng.Next(-20, 55),
+                Summary = Summaries[rng.Next(Summaries.Length)]
+            }).ToList();
         }
     }
 }

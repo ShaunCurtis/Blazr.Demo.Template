@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\shaun\\source\\repos\\Blazr.Demo.Template\\Blazr.Demo.WASM.Web\\Blazr.Demo.WASM.Web.csproj",
+  "FilePath": "c:\\Users\\shaun\\Documents\\GitHub\\Blazr.Demo.Template\\Blazr.Demo.WASM.Web\\Blazr.Demo.WASM.Web.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -16298,28 +16298,28 @@
   "RootNamespace": "Blazr.Demo.WASM.Web",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\shaun\\source\\repos\\Blazr.Demo.Template\\Blazr.Demo.WASM.Web\\Pages\\_ViewImports.cshtml",
-      "TargetPath": "Pages\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\shaun\\source\\repos\\Blazr.Demo.Template\\Blazr.Demo.WASM.Web\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "c:\\Users\\shaun\\Documents\\GitHub\\Blazr.Demo.Template\\Blazr.Demo.WASM.Web\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\shaun\\source\\repos\\Blazr.Demo.Template\\Blazr.Demo.WASM.Web\\Pages\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\shaun\\Documents\\GitHub\\Blazr.Demo.Template\\Blazr.Demo.WASM.Web\\Pages\\Shared\\_Layout.cshtml",
       "TargetPath": "Pages\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\shaun\\source\\repos\\Blazr.Demo.Template\\Blazr.Demo.WASM.Web\\Pages\\Error.cshtml",
+      "FilePath": "c:\\Users\\shaun\\Documents\\GitHub\\Blazr.Demo.Template\\Blazr.Demo.WASM.Web\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\shaun\\source\\repos\\Blazr.Demo.Template\\Blazr.Demo.WASM.Web\\Pages\\_ViewStart.cshtml",
+      "FilePath": "c:\\Users\\shaun\\Documents\\GitHub\\Blazr.Demo.Template\\Blazr.Demo.WASM.Web\\Pages\\_ViewStart.cshtml",
       "TargetPath": "Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\shaun\\Documents\\GitHub\\Blazr.Demo.Template\\Blazr.Demo.WASM.Web\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Pages\\_ViewImports.cshtml",
       "FileKind": "mvc"
     }
   ],

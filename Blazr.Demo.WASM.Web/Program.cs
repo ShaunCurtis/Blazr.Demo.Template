@@ -1,4 +1,5 @@
 using $ext_safeprojectname$.Config;
+using Microsoft.AspNetCore.Mvc.ApplicationParts;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +10,7 @@ builder.Services.AddRazorPages();
 
 var services = builder.Services;
 services.AddAppWASMServerServices();
+services.AddControllers().PartManager.ApplicationParts.Add(new AssemblyPart(typeof($ext_safeprojectname$.Controllers.WeatherForecastController).Assembly));
 
 
 var app = builder.Build();

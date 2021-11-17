@@ -11,13 +11,13 @@ build_property.EnableTrimAnalyzer = true
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = Blazr.Demo.WASM
 build_property.RootNamespace = Blazr.Demo.WASM
-build_property.ProjectDir = c:\Users\shaun\source\repos\Blazr.Demo.Template\Blazr.Demo.WASM\
+build_property.ProjectDir = c:\Users\shaun\Documents\GitHub\Blazr.Demo.Template\Blazr.Demo.WASM\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\shaun\source\repos\Blazr.Demo.Template\Blazr.Demo.WASM
+build_property.MSBuildProjectDirectory = c:\Users\shaun\Documents\GitHub\Blazr.Demo.Template\Blazr.Demo.WASM
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/shaun/source/repos/Blazr.Demo.Template/Blazr.Demo.WASM/_Imports.razor]
+[c:/Users/shaun/Documents/GitHub/Blazr.Demo.Template/Blazr.Demo.WASM/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

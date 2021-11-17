@@ -23,6 +23,9 @@
       <Folder Name="DataStores" TargetFolderName="DataStores">
         <ProjectItem ReplaceParameters="true" TargetFileName="WeatherForecastDataStore.cs">WeatherForecastDataStore.cs</ProjectItem>
       </Folder>
+      <Folder Name="DataBaseObjects" TargetFolderName="DataBaseObjects">
+        <ProjectItem ReplaceParameters="true" TargetFileName="DboWeatherForecast.cs">DboWeatherForecast.cs</ProjectItem>
+      </Folder>
     </Project>
   </TemplateContent>
 </VSTemplate>
