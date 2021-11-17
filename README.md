@@ -15,7 +15,7 @@ The basic architecture of the solution splits the application codebase into thre
 2. **Core domain** - this is the core application code the business and logical layers of an application.  It has no dependancies on other solution projects.
 3. **UI Domain** - this contains all the UI component code.
 
-![Design Architecture](./images/Domain-Model.png)
+![Design Architecture](./Images/Domain-Model.png)
 
 There are two other support **Domains** for code:
 
@@ -38,11 +38,11 @@ Within the project this translates into the following projects:
 
 ### Server SPA/Web Dependancies
 
-![Server Dependancies](./images/Blazr.Demo.Server.Web-Project-Structure.png)
+![Server Dependancies](./Images/Blazr.Demo.Server.Web-Project-Structure.png)
 
 ### WASM SPA/Web Dependancies
 
-![WASM Dependancies](./images/Blazr.Demo.WASM.Web-Project-Structure.png)
+![WASM Dependancies](./Images/Blazr.Demo.WASM.Web-Project-Structure.png)
 
 ## Key Design Points:
 
