@@ -13,6 +13,7 @@
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
     <CreateInPlace>true</CreateInPlace>
     <Icon>__TemplateIcon.ico</Icon>
+    <Hidden>true</Hidden>
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="Blazr.Demo.UI.csproj" File="Blazr.Demo.UI.csproj" ReplaceParameters="true">
@@ -25,7 +26,7 @@
           <ProjectItem ReplaceParameters="true" TargetFileName="WeatherForecastListHeader.razor">WeatherForecastListHeader.razor</ProjectItem>
         </Folder>
       </Folder>
-      <Folder Name="Pages" TargetFolderName="Pages">
+      <Folder Name="Routes" TargetFolderName="Routes">
         <ProjectItem ReplaceParameters="true" TargetFileName="Counter.razor">Counter.razor</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="FetchData.razor">FetchData.razor</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Index.razor">Index.razor</ProjectItem>

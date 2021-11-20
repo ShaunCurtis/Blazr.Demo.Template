@@ -12,6 +12,11 @@
   "RootNamespace": "Blazr.Demo.UI",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\shaun\\Documents\\GitHub\\Blazr.Demo.Template\\Blazr.Demo.UI\\Routes\\Rendering.razor",
+      "TargetPath": "Routes\\Rendering.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "c:\\Users\\shaun\\Documents\\GitHub\\Blazr.Demo.Template\\Blazr.Demo.UI\\Shared\\SurveyPrompt.razor",
       "TargetPath": "Shared\\SurveyPrompt.razor",
       "FileKind": "component"
@@ -27,13 +32,23 @@
       "FileKind": "component"
     },
     {
+      "FilePath": "c:\\Users\\shaun\\Documents\\GitHub\\Blazr.Demo.Template\\Blazr.Demo.UI\\Routes\\Counter.razor",
+      "TargetPath": "Routes\\Counter.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\shaun\\Documents\\GitHub\\Blazr.Demo.Template\\Blazr.Demo.UI\\Routes\\Index.razor",
+      "TargetPath": "Routes\\Index.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "c:\\Users\\shaun\\Documents\\GitHub\\Blazr.Demo.Template\\Blazr.Demo.UI\\Components\\WeatherForecasts\\WeatherForecastList.razor",
       "TargetPath": "Components\\WeatherForecasts\\WeatherForecastList.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\shaun\\Documents\\GitHub\\Blazr.Demo.Template\\Blazr.Demo.UI\\Pages\\Counter.razor",
-      "TargetPath": "Pages\\Counter.razor",
+      "FilePath": "c:\\Users\\shaun\\Documents\\GitHub\\Blazr.Demo.Template\\Blazr.Demo.UI\\Routes\\FetchData.razor",
+      "TargetPath": "Routes\\FetchData.razor",
       "FileKind": "component"
     },
     {
@@ -49,21 +64,6 @@
     {
       "FilePath": "c:\\Users\\shaun\\Documents\\GitHub\\Blazr.Demo.Template\\Blazr.Demo.UI\\Components\\WeatherForecasts\\WeatherForecastListHeader.razor",
       "TargetPath": "Components\\WeatherForecasts\\WeatherForecastListHeader.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\shaun\\Documents\\GitHub\\Blazr.Demo.Template\\Blazr.Demo.UI\\Pages\\FetchData.razor",
-      "TargetPath": "Pages\\FetchData.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\shaun\\Documents\\GitHub\\Blazr.Demo.Template\\Blazr.Demo.UI\\Pages\\Rendering.razor",
-      "TargetPath": "Pages\\Rendering.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\shaun\\Documents\\GitHub\\Blazr.Demo.Template\\Blazr.Demo.UI\\Pages\\Index.razor",
-      "TargetPath": "Pages\\Index.razor",
       "FileKind": "component"
     }
   ],
