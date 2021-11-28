@@ -20,6 +20,7 @@
       <Folder Name="Controllers" TargetFolderName="Controllers">
         <ProjectItem ReplaceParameters="true" TargetFileName="WeatherForecastController.cs">WeatherForecastController.cs</ProjectItem>
       </Folder>
-    </Project>
+		<ProjectItem ReplaceParameters="true" TargetFileName="program.cs">program.cs</ProjectItem>
+	</Project>
   </TemplateContent>
 </VSTemplate>

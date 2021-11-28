@@ -4,33 +4,30 @@
 /// If you use it, donate something to a charity somewhere
 /// ============================================================
 
-using $ext_projectname$.Core;
-using Microsoft.AspNetCore.Mvc;
-
 namespace $safeprojectname$
 {
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
-        private IWeatherForecastDataBroker weatherForecastDataBroker;
+        private readonly IWeatherForecastDataBroker _dataBroker;
 
         public WeatherForecastController(IWeatherForecastDataBroker weatherForecastDataBroker)
-            => this.weatherForecastDataBroker = weatherForecastDataBroker;
+            => _dataBroker = weatherForecastDataBroker;
 
-        [Route("/api/weatherforecast/list")]
+        [Route("/api/weatherforecast/GetRecordsAsync")]
         [HttpGet]
-        public async Task<List<WeatherForecast>> GetForecastAsync()
-            => await weatherForecastDataBroker.GetWeatherForecastsAsync();
+        public async Task<List<WeatherForecast>> GetRecordsAsync() 
+            => await _dataBroker.GetRecordsAsync();
 
-        [Route("/api/weatherforecast/add")]
+        [Route("/api/weatherforecast/GetPagedRecordsAsync")]
         [HttpPost]
-        public async Task<bool> AddRecordAsync([FromBody] WeatherForecast record)
-            => await weatherForecastDataBroker.AddForecastAsync(record);
+        public async Task<List<WeatherForecast>> GetPagedRecordsAsync([FromBody] PagingData pagingData) 
+            => await _dataBroker.GetPagedRecordsAsync(pagingData);
 
-        [Route("/api/weatherforecast/delete")]
-        [HttpPost]
-        public async Task<bool> DeleteRecordAsync([FromBody] Guid Id)
-            => await weatherForecastDataBroker.DeleteForecastAsync(Id);
+        [Route("/api/weatherforecast/GetRecordCountAsync")]
+        [HttpGet]
+        public async Task<int> GetRecordCountAsync() 
+            => await _dataBroker.GetRecordCountAsync();
     }
 }

@@ -4,31 +4,35 @@
 /// If you use it, donate something to a charity somewhere
 /// ============================================================
 
-using $ext_projectname$.Core;
-using $ext_projectname$.Data;
-using Microsoft.Extensions.DependencyInjection;
-
 namespace $safeprojectname$
 {
-    public static class IServiceCollectionExtensions
+    public static class ServiceCollectionExtensions
     {
-        public static void AddAppBlazorServerServices(this IServiceCollection services)
-        {
-            services.AddSingleton<WeatherForecastDataStore>();
-            services.AddSingleton<IWeatherForecastDataBroker, WeatherForecastServerDataBroker>();
-            services.AddScoped<WeatherForecastViewService>();
-        }
-
-        public static void AddAppBlazorWASMServices(this IServiceCollection services)
+        public static IServiceCollection AddWASMApplicationServices(this IServiceCollection services)
         {
             services.AddScoped<IWeatherForecastDataBroker, WeatherForecastAPIDataBroker>();
-            services.AddScoped<WeatherForecastViewService>();
+            AddCommonServices(services);
+            return services;
         }
 
-        public static void AddAppWASMServerServices(this IServiceCollection services)
+        public static IServiceCollection AddServerApplicationServices(this IServiceCollection services)
+        {
+            services.AddSingleton<IWeatherForecastDataBroker, WeatherForecastServerDataBroker>();
+            AddCommonServices(services);
+            return services;
+        }
+
+        public static IServiceCollection AddWASMServerApplicationServices(this IServiceCollection services)
         {
             services.AddSingleton<WeatherForecastDataStore>();
             services.AddSingleton<IWeatherForecastDataBroker, WeatherForecastServerDataBroker>();
+            return services;
+        }
+
+        private static void AddCommonServices(this IServiceCollection services)
+        {
+            services.AddSingleton<WeatherForecastDataStore>();
+            services.AddScoped<WeatherForecastViewService>();
         }
     }
 }

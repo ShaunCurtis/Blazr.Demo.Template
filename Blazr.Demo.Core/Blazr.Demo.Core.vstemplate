@@ -26,6 +26,7 @@
       <Folder Name="ViewServices" TargetFolderName="ViewServices">
         <ProjectItem ReplaceParameters="true" TargetFileName="WeatherForecastViewService.cs">WeatherForecastViewService.cs</ProjectItem>
       </Folder>
-    </Project>
+		<ProjectItem ReplaceParameters="true" TargetFileName="program.cs">program.cs</ProjectItem>
+	</Project>
   </TemplateContent>
 </VSTemplate>
