@@ -4,8 +4,6 @@
 /// If you use it, donate something to a charity somewhere
 /// ============================================================
 
-using $ext_safeprojectname$.Data;
-using Xunit;
 
 namespace Blazr.Template.Tests.DataBrokers
 {

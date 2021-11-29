@@ -4,8 +4,6 @@
 /// If you use it, donate something to a charity somewhere
 /// ============================================================
 
-using $ext_projectname$.Core;
-using System.Net.Http.Json;
 
 namespace $safeprojectname$
 {

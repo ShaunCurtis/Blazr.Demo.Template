@@ -26,6 +26,7 @@
       <Folder Name="DataBaseObjects" TargetFolderName="DataBaseObjects">
         <ProjectItem ReplaceParameters="true" TargetFileName="DboWeatherForecast.cs">DboWeatherForecast.cs</ProjectItem>
       </Folder>
-    </Project>
+		<ProjectItem ReplaceParameters="true" TargetFileName="program.cs">program.cs</ProjectItem>
+	</Project>
   </TemplateContent>
 </VSTemplate>

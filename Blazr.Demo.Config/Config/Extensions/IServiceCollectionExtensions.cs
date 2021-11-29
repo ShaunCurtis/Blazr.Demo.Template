@@ -6,33 +6,25 @@
 
 namespace $safeprojectname$
 {
-    public static class ServiceCollectionExtensions
+    public static class IServiceCollectionExtensions
     {
-        public static IServiceCollection AddWASMApplicationServices(this IServiceCollection services)
+        public static void AddAppBlazorServerServices(this IServiceCollection services)
+        {
+            services.AddSingleton<WeatherForecastDataStore>();
+            services.AddSingleton<IWeatherForecastDataBroker, WeatherForecastServerDataBroker>();
+            services.AddScoped<WeatherForecastViewService>();
+        }
+
+        public static void AddAppBlazorWASMServices(this IServiceCollection services)
         {
             services.AddScoped<IWeatherForecastDataBroker, WeatherForecastAPIDataBroker>();
-            AddCommonServices(services);
-            return services;
-        }
-
-        public static IServiceCollection AddServerApplicationServices(this IServiceCollection services)
-        {
-            services.AddSingleton<IWeatherForecastDataBroker, WeatherForecastServerDataBroker>();
-            AddCommonServices(services);
-            return services;
-        }
-
-        public static IServiceCollection AddWASMServerApplicationServices(this IServiceCollection services)
-        {
-            services.AddSingleton<WeatherForecastDataStore>();
-            services.AddSingleton<IWeatherForecastDataBroker, WeatherForecastServerDataBroker>();
-            return services;
-        }
-
-        private static void AddCommonServices(this IServiceCollection services)
-        {
-            services.AddSingleton<WeatherForecastDataStore>();
             services.AddScoped<WeatherForecastViewService>();
+        }
+
+        public static void AddAppWASMServerServices(this IServiceCollection services)
+        {
+            services.AddSingleton<WeatherForecastDataStore>();
+            services.AddSingleton<IWeatherForecastDataBroker, WeatherForecastServerDataBroker>();
         }
     }
 }

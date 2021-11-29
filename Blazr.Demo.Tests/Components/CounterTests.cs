@@ -4,9 +4,6 @@
 /// If you use it, donate something to a charity somewhere
 /// ============================================================
 
-using $ext_safeprojectname$.UI;
-using Bunit;
-using Xunit;
 
 namespace $safeprojectname$.Components
 {

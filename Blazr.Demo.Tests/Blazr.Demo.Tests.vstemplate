@@ -26,6 +26,7 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="WeatherForecastViewServiceTests.base.cs">WeatherForecastViewServiceTests.base.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="WeatherForecastViewServiceTests.cs">WeatherForecastViewServiceTests.cs</ProjectItem>
       </Folder>
-    </Project>
+		<ProjectItem ReplaceParameters="true" TargetFileName="program.cs">program.cs</ProjectItem>
+	</Project>
   </TemplateContent>
 </VSTemplate>

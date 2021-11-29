@@ -4,10 +4,6 @@
 /// If you use it, donate something to a charity somewhere
 /// ============================================================
 
-using $ext_safeprojectname$.Core;
-using $ext_safeprojectname$.Data;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace Blazr.Template.Tests.ViewServices
 {

@@ -4,11 +4,6 @@
 /// If you use it, donate something to a charity somewhere
 /// ============================================================
 
-using $ext_safeprojectname$.Core;
-using Moq;
-using System;
-using System.Collections.Generic;
-using Xunit;
 
 namespace Blazr.Template.Tests.ViewServices
 {

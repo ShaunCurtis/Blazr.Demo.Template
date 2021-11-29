@@ -4,7 +4,6 @@
 /// If you use it, donate something to a charity somewhere
 /// ============================================================
 
-using $ext_safeprojectname$.Core;
 
 namespace $safeprojectname$
 {

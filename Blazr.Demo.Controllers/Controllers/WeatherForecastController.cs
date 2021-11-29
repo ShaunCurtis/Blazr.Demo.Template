@@ -10,24 +10,24 @@ namespace $safeprojectname$
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
-        private readonly IWeatherForecastDataBroker _dataBroker;
+        private IWeatherForecastDataBroker weatherForecastDataBroker;
 
         public WeatherForecastController(IWeatherForecastDataBroker weatherForecastDataBroker)
-            => _dataBroker = weatherForecastDataBroker;
+            => this.weatherForecastDataBroker = weatherForecastDataBroker;
 
-        [Route("/api/weatherforecast/GetRecordsAsync")]
+        [Route("/api/weatherforecast/list")]
         [HttpGet]
-        public async Task<List<WeatherForecast>> GetRecordsAsync() 
-            => await _dataBroker.GetRecordsAsync();
+        public async Task<List<WeatherForecast>> GetForecastAsync()
+            => await weatherForecastDataBroker.GetWeatherForecastsAsync();
 
-        [Route("/api/weatherforecast/GetPagedRecordsAsync")]
+        [Route("/api/weatherforecast/add")]
         [HttpPost]
-        public async Task<List<WeatherForecast>> GetPagedRecordsAsync([FromBody] PagingData pagingData) 
-            => await _dataBroker.GetPagedRecordsAsync(pagingData);
+        public async Task<bool> AddRecordAsync([FromBody] WeatherForecast record)
+            => await weatherForecastDataBroker.AddForecastAsync(record);
 
-        [Route("/api/weatherforecast/GetRecordCountAsync")]
-        [HttpGet]
-        public async Task<int> GetRecordCountAsync() 
-            => await _dataBroker.GetRecordCountAsync();
+        [Route("/api/weatherforecast/delete")]
+        [HttpPost]
+        public async Task<bool> DeleteRecordAsync([FromBody] Guid Id)
+            => await weatherForecastDataBroker.DeleteForecastAsync(Id);
     }
 }

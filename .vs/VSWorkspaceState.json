@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Blazr.Demo.Config",
-    "\\Blazr.Demo.Controllers",
     "\\Blazr.Demo.Core",
-    "\\Blazr.Demo.Core\\Interfaces",
-    "\\Blazr.Demo.Core\\ViewServices",
-    "\\Blazr.Demo.Data",
-    "\\Blazr.Demo.Server.Web",
-    "\\Blazr.Demo.UI",
-    "\\Blazr.Demo.WASM.Web"
+    "\\Blazr.Demo.Data\\DataBaseObjects",
+    "\\Blazr.Demo.Data\\DataBrokers",
+    "\\Blazr.Demo.Data\\DataStores",
+    "\\Blazr.Demo.Tests\\Components",
+    "\\Blazr.Demo.Tests\\DataBrokers",
+    "\\Blazr.Demo.Tests\\ViewServices",
+    "\\Blazr.Demo.UI\\Components",
+    "\\Blazr.Demo.UI\\Components\\WeatherForecasts"
   ],
-  "SelectedNode": "\\Blazr.Demo.WASM.Web\\Pages",
+  "SelectedNode": "\\Blazr.Demo.Core\\program.cs",
   "PreviewInSolutionExplorer": false
 }

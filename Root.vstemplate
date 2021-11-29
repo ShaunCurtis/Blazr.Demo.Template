@@ -1,7 +1,7 @@
 <VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
   <TemplateData>
     <Name>Blazr Demo Solution Template</Name>
-    <Description>Blazr Demo Blazor SPA Solution Template</Description>
+    <Description>A Blazor solution template based on Clean Design principles.  It integrates Server and Web Assembly code into the same solution.</Description>
     <ProjectType>CSharp</ProjectType>
     <ProjectSubType>
     </ProjectSubType>
