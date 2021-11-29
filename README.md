@@ -2,16 +2,12 @@
 
 This template combines the out-of-the-box Blazor Server and Web Assembly templates into a single solution.  The projects are re-organised to:
 
-1. Apply Clean Design principles. 
+1. Apply Sound Design principles. 
 2. Re-organise the code base so the Blazor Server and WASM SPA's are two implementation of the same code base.
 3. Demonstrate component rendering techniques.
 4. Demonstrate the Service Notification pattern.
 
-## Using the Template
-
-You can install the template in Visual Studio by copying *Blazr.Demo.zip* to your *Project Templates* folder - normally in *Documents/Visual Studio 2022/Templates/Project Templates*.
-
-## Clean Design
+## Sound Design
 
 The basic architecture of the solution splits the application codebase into three domains:
 

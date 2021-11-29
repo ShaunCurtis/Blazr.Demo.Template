@@ -13,7 +13,6 @@
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
     <CreateInPlace>true</CreateInPlace>
     <Icon>__TemplateIcon.ico</Icon>
-    <Hidden>true</Hidden>
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="Blazr.Demo.Tests.csproj" File="Blazr.Demo.Tests.csproj" ReplaceParameters="true">

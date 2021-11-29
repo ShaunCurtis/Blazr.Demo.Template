@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Blazr.Demo.Config",
+    "\\Blazr.Demo.Controllers",
+    "\\Blazr.Demo.Core",
+    "\\Blazr.Demo.Core\\Interfaces",
+    "\\Blazr.Demo.Core\\ViewServices",
+    "\\Blazr.Demo.Data",
+    "\\Blazr.Demo.Server.Web",
+    "\\Blazr.Demo.UI",
+    "\\Blazr.Demo.WASM.Web"
+  ],
+  "SelectedNode": "\\Blazr.Demo.WASM.Web\\Pages",
+  "PreviewInSolutionExplorer": false
+}
